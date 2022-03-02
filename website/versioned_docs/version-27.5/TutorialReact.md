@@ -225,7 +225,7 @@ const CheckboxWithLabel = ({labelOn, labelOff}) => {
 export default CheckboxWithLabel;
 ```
 
-```tsx title="__tests__/CheckboxWithLabel-test.js"
+```tsx title="__tests__/CheckboxWithLabel.test.js"
 import React from 'react';
 import {cleanup, fireEvent, render} from '@testing-library/react';
 import CheckboxWithLabel from '../CheckboxWithLabel';
@@ -255,7 +255,7 @@ You have to run `yarn add --dev enzyme` to use Enzyme. If you are using a React 
 
 Let's rewrite the test from above using Enzyme instead of react-testing-library. We use Enzyme's [shallow renderer](http://airbnb.io/enzyme/docs/api/shallow.html) in this example.
 
-```tsx title="__tests__/CheckboxWithLabel-test.js"
+```tsx title="__tests__/CheckboxWithLabel.test.js"
 import React from 'react';
 import {shallow} from 'enzyme';
 import CheckboxWithLabel from '../CheckboxWithLabel';
